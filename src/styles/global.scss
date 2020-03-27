@@ -1,0 +1,14 @@
+@mixin smallerMedia {
+  @media (max-width: 660px) {
+    @content;
+  }
+}
+
+body {
+  // background-color: red;
+  margin: 0;
+
+  @include smallerMedia {
+    background-color: green;
+  }
+}

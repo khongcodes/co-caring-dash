@@ -29,3 +29,42 @@
   transition: opacity 200ms;
   @extend %dark-modal-basic;
 }
+
+
+///////////////////////////////////////////////////////////
+//////////////////////   SIDE MENU   //////////////////////
+///////////////////////////////////////////////////////////
+
+%side-menu-basic {
+  z-index: 3;
+  position: fixed;
+  height: 100%;
+  width: 20%;
+  background-color: green;
+}
+
+.side-menu, .side-menu-exit-done {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.side-menu.side-menu-enter {
+  opacity: 0;
+  @extend %side-menu-basic;
+}
+
+.side-menu.side-menu-enter-active {
+  opacity: 1;
+  @extend %side-menu-basic;
+}
+
+.side-menu.side-menu-enter-done, .side-menu.side-menu-exit {
+  opacity: 1;
+  @extend %side-menu-basic;
+}
+
+.side-menu.side-menu-exit-active {
+  opacity: 0;
+  @extend %side-menu-basic;
+}

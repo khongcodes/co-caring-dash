@@ -15,17 +15,26 @@ const Burger = ({toggleMenu}) => (
   </div>
 )
 
-const SideMenu = ({ toggleMenu, menuActive }) => (
+const SideMenu = ({ toggleMenu, menuActive, children }) => (
   <>
-    {/* <div >
-      <ul></ul>
-    </div> */}
+    <CSSTransition
+      in={menuActive}
+      timeout={200}
+      classNames="side-menu"
+    >
+      <div className="side-menu">
+        {/* <ul> */}
+          <li>link 1</li>
+          <li>link 2</li>
+        {/* </ul> */}
+      </div>
+    </CSSTransition>
     
     <CSSTransition
-        in={menuActive}
-        timeout={200}
-        classNames="dark-modal"
-      >
+      in={menuActive}
+      timeout={200}
+      classNames="dark-modal"
+    >
       <div onClick={ toggleMenu }/>
     </CSSTransition>
   </>
@@ -51,7 +60,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header toggleMenu={toggleMenu} />
-      
+
       <SideMenu 
         menuActive={menuActive}
         toggleMenu={toggleMenu}

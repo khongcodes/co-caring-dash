@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Iframe = props => {
+const RShinyIframe = props => {
   return (
     <div>
       <iframe 
@@ -14,4 +14,4 @@ const Iframe = props => {
   )
 }
 
-export default Iframe
+export default RShinyIframe

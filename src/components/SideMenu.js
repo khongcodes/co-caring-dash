@@ -44,6 +44,18 @@ const SideMenu = ({ toggleMenu, menuActive, children }) => (
           destination = "/dashboard"
         />
 
+        <SideMenuLink
+          toggleMenu = {toggleMenu}
+          title = "Connect"
+          destination = "/connect"
+        />
+
+        <SideMenuLink
+          toggleMenu = {toggleMenu}
+          title = "Resources"
+          destination = "/resources"
+        />
+
       </div>
     </CSSTransition>
     

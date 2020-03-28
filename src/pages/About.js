@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-// import copy from '../data/copy.js';
-// import CopyFormatter from '../components/CopyFormatter';
+import copy from '../data/copy.js';
+import CopyFormatter from '../components/CopyFormatter';
 
 
 const About = () => {
+  useEffect(() => {
+    document.title = 'About Co-Caring'
+  })
 
   return (
     <div className='paragraphContainer'>
@@ -15,6 +18,8 @@ const About = () => {
       <p>Another initiative of the #co-caring movement is sharing tips on how to #shelterinplace. You can do so effectively through 3 steps: 1) exercise, 2) social connection, and 3) inspiration.</p>
       <p>Vytality Health is a social support platform for co-caring where people can document their health & wellness journeys while sharing deep, authentic support. We help build people’s personalized circles of support so we can all have transformative health and wellness.</p>
       <p>Read about and download the Rapid Response Tool for Coronavirus here at <a href='http://bit.ly/coronavirustool'>http://bit.ly/coronavirustool</a>.</p>
+
+      {/* <CopyFormatter src={copy.pressRelease}/> */}
       
     </div>
   )

@@ -4,6 +4,11 @@
   }
 }
 
+$sans-serif-font: 'Open Sans', sans-serif;
+$script-font: 'Dancing Script', cursive;
+$vy-blue-regular: #64d5f8;
+$vy-blue-light: #7de4ff;
+$kevin-blue-dark: #4cc3e7;
 
 ///////////////////////////////////////////////////////////
 //////////////////////   DARK MODAL   //////////////////////
@@ -11,7 +16,7 @@
 
 %dark-modal-basic {
   z-index: 2;
-  position: fixed;
+  position: absolute;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.35);
@@ -48,10 +53,10 @@
 
 %side-menu-basic {
   z-index: 3;
-  position: fixed;
+  position: absolute;
   height: 100%;
   width: 18rem;
-  background-color: rgb(31, 115, 143);
+  background-color: $kevin-blue-dark;
   padding: 2rem;
   box-sizing: border-box;
 

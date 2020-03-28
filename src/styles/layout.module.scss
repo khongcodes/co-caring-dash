@@ -4,8 +4,15 @@
   }
 }
 
+$sans-serif-font: 'Open Sans', sans-serif;
+$script-font: 'Dancing Script', cursive;
+$vy-blue-regular: #64d5f8;
+$vy-blue-light: #7de4ff;
+$kevin-blue-light: #e9f3ff;
+
+
 .header {
-  background-color: #2891B5;
+  background-color: $vy-blue-regular;
   width: 100%;
   height: 4rem;
   overflow: auto;
@@ -22,7 +29,7 @@
     cursor: pointer;
 
     div {
-      background-color: rgb(166, 233, 255);
+      background-color: rgb(255, 255, 255);
       width: 100%;
       border-radius: 12%;
       height: 15%;
@@ -31,7 +38,7 @@
 
   %burgerFocused {
     div {
-      background-color: rgb(189, 238, 255);
+      background-color: $kevin-blue-light;
       box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.151);
     }
   }
@@ -57,10 +64,10 @@
     // width: 10rem;
 
     h1 {
-      margin-block-start: 0.4rem;
+      margin-block-start: 0.2rem;
       margin-block-end: 0;
       color: white;
-      font-family: 'Inter', sans-serif;
+      font-family: $script-font;
     }
   }
 }
@@ -69,6 +76,7 @@
 
 main {
   // background-color: rgb(255, 185, 185);
+  height: fit-content;
   width: 94vw;
   margin: 0 auto;
   padding-top: 1rem;

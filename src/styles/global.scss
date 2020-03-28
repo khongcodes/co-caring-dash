@@ -1,18 +1,18 @@
-@import url('https://rsms.me/inter/inter.css');
-// html { font-family: 'Inter', sans-serif; }
-// @supports (font-variation-settings: normal) {
-  // html { font-family: 'Inter var', sans-serif; }
-// }
-
 @mixin smallerMedia {
   @media (max-width: 660px) {
     @content;
   }
 }
 
+$sans-serif-font: 'Open Sans', sans-serif;
+$script-font: 'Dancing Script', cursive;
+$vy-blue-regular: #64d5f8;
+$vy-blue-light: #7de4ff;
+
 body {
   // background-color: red;
   margin: 0;
+  font-family: $sans-serif-font;
 
   @include smallerMedia {
     background-color: green;

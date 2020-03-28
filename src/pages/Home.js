@@ -15,6 +15,7 @@ const Home = () => {
         frameborder = "0"
         width = "100%"
         height = "850px"
+        title = 'shinytrendchart'
       />
         {/* <iframe id="example1" src="https://gallery.shinyapps.io/goog-trend-index/" style="border: none; width: 100%; height: 850px" frameborder="0"></iframe> */}
     </div>

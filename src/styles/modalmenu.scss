@@ -95,6 +95,10 @@
 .linkContainer {
   // background-color:Red;
   margin-bottom: 2rem;
+  
+  @include smallerMedia {
+    text-align: center;
+  }
 
   a {
     color: white;

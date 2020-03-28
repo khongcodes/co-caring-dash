@@ -54,12 +54,13 @@
     margin: 0.5rem;
     margin-left: 2rem;
     height: 3rem;
-    width: 10rem;
+    // width: 10rem;
 
     h1 {
       margin-block-start: 0.4rem;
       margin-block-end: 0;
       color: white;
+      font-family: 'Inter', sans-serif;
     }
   }
 }
@@ -67,7 +68,7 @@
 
 
 main {
-  background-color: rgb(255, 185, 185);
+  // background-color: rgb(255, 185, 185);
   width: 94vw;
   margin: 0 auto;
 

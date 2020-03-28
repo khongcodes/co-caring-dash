@@ -8,19 +8,25 @@ $sans-serif-font: 'Open Sans', sans-serif;
 $script-font: 'Dancing Script', cursive;
 $vy-blue-regular: #64d5f8;
 $vy-blue-light: #7de4ff;
-$kevin-blue-light: #e9f3ff;
+
+$header-color: white;
+$title-color: black;
+$burger-color: $vy-blue-light;
+$burger-active-color: $vy-blue-regular;
+
 
 
 .header {
-  background-color: $vy-blue-regular;
+  background-color: $header-color;
   width: 100%;
-  height: 4rem;
+  height: 4.6rem;
   overflow: auto;
   z-index: 3;
+  padding-top: 0.5rem;
 
   %basicBurger {
     float: left;
-    margin: 1.5rem 0.5rem 1.5rem 1rem;
+    margin: 1.75rem 0.5rem 1.75rem 2rem;
     width: 2rem;
     height: 1rem;
     display: flex;
@@ -29,7 +35,7 @@ $kevin-blue-light: #e9f3ff;
     cursor: pointer;
 
     div {
-      background-color: rgb(255, 255, 255);
+      background-color: $burger-color;
       width: 100%;
       border-radius: 12%;
       height: 15%;
@@ -38,7 +44,7 @@ $kevin-blue-light: #e9f3ff;
 
   %burgerFocused {
     div {
-      background-color: $kevin-blue-light;
+      background-color: $burger-active-color;
       box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.151);
     }
   }
@@ -64,9 +70,9 @@ $kevin-blue-light: #e9f3ff;
     // width: 10rem;
 
     h1 {
-      margin-block-start: 0.2rem;
+      margin-block-start: 0.5rem;
       margin-block-end: 0;
-      color: white;
+      color: $title-color;
       font-family: $script-font;
     }
   }

@@ -76,8 +76,9 @@ $kevin-blue-light: #e9f3ff;
 
 main {
   // background-color: rgb(255, 185, 185);
-  height: fit-content;
   width: 94vw;
+  min-height: fit-content;
+  height: 94vh;
   margin: 0 auto;
   padding-top: 1rem;
 

@@ -1,7 +1,21 @@
 import React from 'react';
-import { CSSTransition } from 'react-transition-group';
+import { NavLink } from 'react-router-dom';
 
+import { CSSTransition } from 'react-transition-group';
 import "../styles/modalmenu.scss"
+
+const SideMenuLink = ({title, destination, toggleMenu}) => {
+  return (
+    <div className="linkContainer">
+      <NavLink 
+        to = {destination}
+        onClick = {toggleMenu}
+      >
+        {title}
+      </NavLink>
+    </div>
+  )
+}
 
 const SideMenu = ({ toggleMenu, menuActive, children }) => (
   <>
@@ -11,10 +25,19 @@ const SideMenu = ({ toggleMenu, menuActive, children }) => (
       classNames="side-menu"
     >
       <div className="side-menu">
-        {/* <ul> */}
-          <li>link 1</li>
-          <li>link 2</li>
-        {/* </ul> */}
+
+        <SideMenuLink
+          toggleMenu = {toggleMenu}
+          title = "Home"
+          destination = "/"
+        />
+
+        <SideMenuLink
+          toggleMenu = {toggleMenu}
+          title = "Press Release"
+          destination = "/about"
+        />
+
       </div>
     </CSSTransition>
     

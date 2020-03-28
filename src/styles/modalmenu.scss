@@ -1,3 +1,14 @@
+@mixin smallerMedia {
+  @media (max-width: 660px) {
+    @content;
+  }
+}
+
+
+///////////////////////////////////////////////////////////
+//////////////////////   DARK MODAL   //////////////////////
+///////////////////////////////////////////////////////////
+
 %dark-modal-basic {
   z-index: 2;
   position: fixed;
@@ -39,10 +50,15 @@
   z-index: 3;
   position: fixed;
   height: 100%;
-  width: 20%;
+  width: 18rem;
   background-color: rgb(31, 115, 143);
-  padding: 1rem;
+  padding: 2rem;
   box-sizing: border-box;
+
+  @include smallerMedia {
+    width: 100%;
+    height: fit-content;
+  }
 }
 
 .side-menu, .side-menu-exit-done {
@@ -69,4 +85,19 @@
 .side-menu.side-menu-exit-active {
   opacity: 0;
   @extend %side-menu-basic;
+}
+
+
+///////////////////////////////////////////////////////////
+//////////////////////   MENU LINKS   //////////////////////
+///////////////////////////////////////////////////////////
+
+.linkContainer {
+  // background-color:Red;
+  margin-bottom: 2rem;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }

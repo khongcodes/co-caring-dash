@@ -7,9 +7,7 @@ import layoutStyles from "../styles/layout.module.scss";
 
 const Burger = ({menuActive, toggleMenu}) => (
   <div 
-    className = {
-      menuActive ? layoutStyles.burgerActive : layoutStyles.burger
-    }
+    className = { menuActive ? layoutStyles.burgerActive : layoutStyles.burger }
     onClick = {toggleMenu}
   >
     <div/>

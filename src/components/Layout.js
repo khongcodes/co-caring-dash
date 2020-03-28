@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-import { CSSTransition } from 'react-transition-group';
+
 import SideMenu from './SideMenu';
 
 import "../styles/modalmenu.scss"
 import layoutStyles from "../styles/layout.module.scss";
 
-const Burger = ({toggleMenu}) => (
+const Burger = ({menuActive, toggleMenu}) => (
   <div 
-    className = {layoutStyles.burger}
+    className = {
+      menuActive ? layoutStyles.burgerActive : layoutStyles.burger
+    }
     onClick = {toggleMenu}
   >
     <div/>
@@ -16,9 +18,12 @@ const Burger = ({toggleMenu}) => (
   </div>
 )
 
-const Header = ({ toggleMenu }) => (
+const Header = ({ menuActive, toggleMenu }) => (
   <div className={layoutStyles.header}>
-    <Burger toggleMenu={toggleMenu} />
+    <Burger 
+      menuActive = {menuActive}
+      toggleMenu = {toggleMenu} 
+    />
     
     <div className={layoutStyles.titleContainer}>
       <h1>Co-Caring</h1>
@@ -35,11 +40,14 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header toggleMenu={toggleMenu} />
+      <Header 
+        menuActive = {menuActive}
+        toggleMenu = {toggleMenu} 
+      />
 
       <SideMenu 
-        menuActive={menuActive}
-        toggleMenu={toggleMenu}
+        menuActive = {menuActive}
+        toggleMenu = {toggleMenu}
       />
 
       <main>{children}</main>

@@ -11,15 +11,15 @@
   overflow: auto;
   z-index: 3;
 
-
-  .burger {
+  %basicBurger {
     float: left;
-    margin: 1.3rem 0.5rem 1.3rem 1rem;
-    width: 2.5rem;
-    height: 1.4rem;
+    margin: 1.5rem 0.5rem 1.5rem 1rem;
+    width: 2rem;
+    height: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
 
     div {
       background-color: rgb(166, 233, 255);
@@ -27,6 +27,26 @@
       border-radius: 12%;
       height: 15%;
     }
+  }
+
+  %burgerFocused {
+    div {
+      background-color: rgb(189, 238, 255);
+      box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.151);
+    }
+  }
+
+  .burger {
+    @extend %basicBurger;
+  }
+
+  .burger:hover {
+    @extend %burgerFocused;
+  }
+
+  .burgerActive {
+    @extend %basicBurger;
+    @extend %burgerFocused;
   }
 
   .titleContainer {
@@ -47,7 +67,7 @@
 
 
 main {
-  background-color: red;
+  background-color: rgb(255, 185, 185);
   width: 94vw;
   margin: 0 auto;
 

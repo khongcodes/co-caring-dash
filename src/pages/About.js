@@ -7,7 +7,7 @@ import React from 'react';
 const About = () => {
 
   return (
-    <div>
+    <div className='paragraphContainer'>
       <p>Individuals are coming together to create tools to respond to COVID-19 as part of the Pandemic Response Hackathon. One such tool is the Co-Caring Dashboard, created for citizens of California to get a quick estimate of how non-pharmaceutical interventions (NPIs), such as #shelterinplace, are having an impact on reducing the spread of COVID-19.</p>
       <p>California currently has 3,829 confirmed cases of coronavirus, with a 27.71% change today (831 additional cases). <a href='https://ncov2019.live/data'>https://ncov2019.live/data</a></p>
       <p>In order to slow down the spread of the COVID-19, the best course of action currently available is #shelterinplace, also known as practicing “social distancing” by avoiding public places. You can see the positive impacts of #shelterinplace on reducing the curve here: <a href='https://www.washingtonpost.com/graphics/2020/world/corona-simulator/'>https://www.washingtonpost.com/graphics/2020/world/corona-simulator/</a>.</p>

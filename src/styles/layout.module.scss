@@ -71,6 +71,7 @@ main {
   // background-color: rgb(255, 185, 185);
   width: 94vw;
   margin: 0 auto;
+  padding-top: 1rem;
 
   @include smallerMedia {
     // background-color: green;

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import SideMenu from './SideMenu';
 
@@ -24,7 +25,9 @@ const Header = ({ menuActive, toggleMenu }) => (
     />
     
     <div className={layoutStyles.titleContainer}>
-      <h1>Co-Caring</h1>
+      <Link to='/'>
+        <h1>Co-Caring</h1>
+      </Link>
     </div>
   </div>
 )

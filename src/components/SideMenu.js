@@ -34,7 +34,7 @@ const SideMenu = ({ toggleMenu, menuActive, children }) => (
 
         <SideMenuLink
           toggleMenu = {toggleMenu}
-          title = "Press Release"
+          title = "About Us"
           destination = "/about"
         />
 

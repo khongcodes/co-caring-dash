@@ -14,15 +14,15 @@ const Resources = () => {
         imgClass = 'resources'
       />
 
-      <TextSection title='Resources for You'>
-        <p style={{width: '58rem'}}>Through establishing routines of exercise, social connection, and inspiration we will get through this time together.</p>
+      <TextSection title='Resources for You' width='58rem'>
+        <p>Through establishing routines of exercise, social connection, and inspiration we will get through this time together.</p>
       </TextSection>
 
       <TextDivider/>
 
-      <TextSection title='Our Top Tips'>
+      <TextSection title='Our Top Tips'/>
 
-      </TextSection>
+      <TextSection title="What's Trending"/>
 
       {/* <ol>
         <li><strong>Exercise</strong> – Seek moments of growth to challenge yourself. Find a workout video online, do some home yoga, or go for a walk around your neighborhood while sticking to the 6 feet apart rule.</li>

@@ -1,13 +1,15 @@
-import React from 'react'
+import React from 'react';
+
+import TextSection from '../components/TextSection';
 
 const ChatForum = () => {
   return (
     <div>
-      <div className='paragraphContainer'>
-        <h2>Connect</h2>
-        <p>Use the chat forums to connect with members in your community and mobilize your task force to reinforce #shelterinplace.</p>
-        <p><a href='https://www.reddit.com/r/vytality/'>Reddit</a></p>
-      </div>
+
+      <div style={{width: '100%', height: '5.25rem'}}/>
+
+      <TextSection title='You are being redirected to "https://www.reddit.com/r/vytality/"...'/>
+
     </div>
   )
 }

@@ -69,6 +69,7 @@
 .textContainer {
   overflow: auto;
   width: 34.25rem;
+  height: 240px;
   position: absolute;
   top: 16.25rem;
   left: 11.25rem;
@@ -103,9 +104,18 @@
     border-radius: 2rem;
     margin-top: 1rem;
     
+    border: none;
+    color: white;
     font-size: medium;
     text-align: center;
-    padding-top: 0.75rem;
     box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: rgb(26, 178, 238);
+    // text-shadow: 0 0 4px rgba(255, 255, 255, 0.521);
+    transition: 0.2 ease-in;
   }
 }

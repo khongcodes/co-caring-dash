@@ -25,8 +25,8 @@ const Dashboard = () => {
           style={{width: '100%'}}
         />         */}
 
-        <TableauViz vizName='Dashboard1' vizOptions={vizOptions1} />
-        <TableauViz vizName='Dashboard2' vizOptions={vizOptions2} />
+        {/* <TableauViz vizName='Dashboard1' vizOptions={vizOptions1} />
+        <TableauViz vizName='Dashboard2' vizOptions={vizOptions2} /> */}
 
       </div>
     </div>

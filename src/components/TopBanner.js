@@ -1,9 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import topBannerStyles from '../styles/topbanner.module.scss';
 
 const TopBanner = ({title, copy, button, imgClass}) => {
   
+  const handleClick = event => {
+    const button = event.target.style;
+    button.position='relative'
+    button.top='0.1rem'
+    setTimeout(()=>{
+      button.top='0'
+    },100)
+  }
   
   return (
     <div className={topBannerStyles.container}>
@@ -15,9 +24,13 @@ const TopBanner = ({title, copy, button, imgClass}) => {
         <p>{copy}</p>
         
         {button ? 
-          <div className={topBannerStyles.button}>
-            LEARN MORE
-          </div>
+          <Link to='/about'>
+            <button className={topBannerStyles.button}
+              onClick = {handleClick}
+            >
+              LEARN MORE
+            </button>
+          </Link>
         : <></>
         }
       </div>

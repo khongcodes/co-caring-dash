@@ -15,7 +15,7 @@ const About = () => {
         title = "About Us"
         copy = "#Co-caring brings people together for greater impact."
         button = {false}
-        bannerClass = 'home'
+        imgClass = 'home'
       />
 
       <TextSection title='Mission Statement'>

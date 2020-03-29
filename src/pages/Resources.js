@@ -11,7 +11,7 @@ const Resources = () => {
         title='Resources'
         copy='Review our tips on how to #shelterinplace.'
         button = {false}
-        bannerClass = 'resources'
+        imgClass = 'resources'
       />
 
       <TextSection title='Resources for You'>

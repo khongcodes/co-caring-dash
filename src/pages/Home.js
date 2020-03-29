@@ -18,7 +18,7 @@ const Home = () => {
         title = "Co-Caring"
         copy = "NOTFINALTEXT Now more than ever, Vytality Health is bringing people together for positive impact in response to the novel coronavirus"
         button = {true}
-        bannerClass = 'home'
+        imgClass = 'home'
       />
       
       <Dashboard />

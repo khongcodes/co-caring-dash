@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import TextSection from '../components/TextSection';
 
 const ChatForum = () => {
+  useEffect(() => {
+    document.title = 'Chat Forum'
+    setTimeout(() => {
+      window.location.href = 'https://www.reddit.com/r/vytality/'
+    }, 2000)
+  })
+
   return (
     <div>
 

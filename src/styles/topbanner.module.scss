@@ -1,4 +1,4 @@
-@import "mediasizes";
+@import "mediasizes", "typecolor";
 
 @mixin largeMedia {
   @media (min-width: 1600px) {
@@ -23,7 +23,7 @@
   background-position-x: center;
   background-position-y: -21rem;
   background-repeat: no-repeat;
-  filter: brightness(0.5);
+  filter: brightness(0.6);
   
   @include largeMedia {
     background-size: 100%;
@@ -50,6 +50,20 @@
 
   p {
     margin-block-start: 0.25rem;
+    margin-block-end: 0;
     // line-height: 2rem;
+  }
+
+  .button {
+    background-color: $mockup-blue-regular;
+    width: 9.375rem;
+    height: 3rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    
+    font-size: medium;
+    text-align: center;
+    padding-top: 0.75rem;
+    box-sizing: border-box;
   }
 }

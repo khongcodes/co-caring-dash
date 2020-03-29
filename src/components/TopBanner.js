@@ -12,6 +12,10 @@ const TopBanner = ({title, copy, button}) => (
     <div className={topBannerStyles.textContainer}>
       <h2>Co-Caring</h2>
       <p>NOTFINALTEXT Now more than ever, Vytality Health is bringing people together for positive impact in response to the novel coronavirus</p>
+      
+      <div className={topBannerStyles.button}>
+        LEARN MORE
+      </div>
     </div>
 
   </div>

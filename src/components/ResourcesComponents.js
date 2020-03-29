@@ -23,7 +23,7 @@ export const TipItem = ({imgClass, title, copy, width, textSide}) => (
       </>
     :
       <>
-        <div className={resourceStyles.text}>
+        <div className={resourceStyles.text} style={{width: width}}>
           <h4>{title}</h4>
           <p>{copy}</p>
         </div>

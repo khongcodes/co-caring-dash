@@ -36,7 +36,7 @@ const Resources = () => {
           imgClass = 'tip2SocialConnection'
           title = 'Social Connection'
           copy = 'Just because we’re sheltering doesn’t mean we can’t stay connected. Find new ways to keep in touch with your community and friends. If you’re a texter, hop on the phone for a call. If you miss seeing your friends faces, try out Skype, FaceTime, Facebook Messenger, or Zoom. The options are plenty!'
-          width = '525px'
+          width = '500px'
           textSide = 'left'
         />
 

@@ -1,7 +1,6 @@
 @import "typecolor";
 
 .tipListContainer {
-  background-color: pink;
   display: flex;
   flex-direction: column;
   
@@ -11,7 +10,6 @@
     width: 67.25rem;
     height: 27.25rem;
     margin: 0 auto 8.44rem;
-    background-color: yellow;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1.375rem;
@@ -41,11 +39,21 @@
       background-size: 958.76px 639.54px;
       background-position: -15.6rem -6rem;
     }
+
+    .tip2SocialConnection {
+      @extend .imgContainer;
+      background-image: url(../images/resources-tips-2-social-connection.jpg);
+      background-size: 755.21px 504.96px;
+      background-position: -12.6rem -4.3rem;
+    }
+
+    .tip3Inspiration {
+      @extend .imgContainer;
+      background-image: url(../images/resources-tips-3-inspiration.jpg);
+      background-size: 660px 436px;
+      background-position: -8.3rem;
+    }
   }
-}
-
-.tip1Exercise {
-
 }
 
 .trendingListContainer {

@@ -42,6 +42,14 @@
   font-size: 1.5rem;
   color: white;
 
+  @include mediumMedia {
+    left: 18%;
+  }
+
+  @include smallerMedia {
+    left: 8%;
+  }
+
   h2 {
     font-size: 48px;
     margin-block-start: 0;

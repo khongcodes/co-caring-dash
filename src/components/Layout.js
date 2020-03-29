@@ -45,6 +45,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
+      {/* margin between banner and first textSection is margin-bottom on .container topbanner.module.scss */}
 
       <main>{children}</main>
 

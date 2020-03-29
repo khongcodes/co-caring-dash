@@ -1,3 +1,6 @@
+// NOTE:
+// margin between banner and first textSection is margin-bottom on .container topbanner.module.scss
+
 @import "mediasizes", "typecolor";
 
 body {
@@ -12,14 +15,4 @@ body {
 
 a {
   text-decoration: none;
-}
-
-.textSection {
-  
-}
-
-.textDivider {
-  width: 4.5rem;
-  height: 5px;
-  margin: 5.75rem auto;
 }

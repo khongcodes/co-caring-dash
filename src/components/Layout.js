@@ -34,6 +34,12 @@ const Header = () => (
   </div>
 )
 
+const Footer = () => (
+  <div className={layoutStyles.footer}>
+
+  </div>
+)
+
 const Layout = ({ children }) => {
 
   return (
@@ -41,6 +47,8 @@ const Layout = ({ children }) => {
       <Header />
 
       <main>{children}</main>
+
+      <Footer />
     </>
   )
 }

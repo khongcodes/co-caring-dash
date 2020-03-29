@@ -14,13 +14,12 @@ a {
   text-decoration: none;
 }
 
-.paragraphContainer {
-  width: 50rem;
-  // margin: 0 auto;
-  margin-left: 10%;
+.textSection {
+  
+}
 
-  @include mediumMedia {
-    width: 80%;
-    margin: 0 auto;
-  }
+.textDivider {
+  width: 4.5rem;
+  height: 5px;
+  margin: 5.75rem auto;
 }

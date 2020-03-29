@@ -1,0 +1,52 @@
+@import "typecolor";
+
+.tipListContainer {
+  background-color: pink;
+  display: flex;
+  
+  margin: 7.375rem 0 13.75rem;
+
+  .tipContainer {
+    width: 67.25rem;
+    height: 27.25rem;
+    margin: 0 auto 8.44rem;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.375rem;
+
+    .text {
+      h4 {
+        font-size: 24px;
+        color: $mockup-blue-textAccent;
+        margin-block-start: 7.5rem;
+        margin-block-end: 1rem;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 30px;
+        margin-block-start: 1rem;
+      }
+    }
+
+    .imgContainer {
+      background-repeat: no-repeat;
+    }
+
+    .tip1Exercise {
+      @extend .imgContainer;
+      background-image: url(../images/resources-tips-1-exercise.jpg);
+      background-size: 958.76px 639.54px;
+      background-position: -15.6rem -6rem;
+    }
+  }
+}
+
+.tip1Exercise {
+
+}
+
+.trendingListContainer {
+  background-color: pink;
+}

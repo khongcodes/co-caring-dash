@@ -54,15 +54,15 @@
 .aboutUs {
   @extend .imgContainer;
   background-image: url('../images/about-us-banner.jpg');
-  background-size: 90.25rem 60rem;
-  background-position-x: 25%;
-  background-position-y: -21.5rem;
+  background-size: 97rem;
+  background-position-x: 4%;
+  background-position-y: -17.5rem;
   filter: brightness(0.5);
   
   @include largeMedia {
-    background-size: 120%;
-    background-position-x: -10rem;
-    background-position-y: 70%;
+    background-size: 100%;
+    background-position-x: -10%;
+    background-position-y: 52%;
   }
 }
 

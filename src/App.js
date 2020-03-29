@@ -1,10 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Home from './pages/Home';
 import About from './pages/About';
 import ChatForum from './pages/ChatForum';
 import Resources from './pages/Resources';
+import Error404 from './pages/404';
 
 import Layout from './components/Layout';
 
@@ -13,10 +14,13 @@ function App() {
   return (
     <Router>
       <Layout>
-        <Route exact path='/' component={Home}/>
-        <Route exact path='/chat-forum' component={ChatForum}/>
-        <Route exact path='/resources' component={Resources}/>
-        <Route exact path='/about' component={About}/>
+        <Switch>
+          <Route exact path='/' component={Home}/>
+          <Route exact path='/chat-forum' component={ChatForum}/>
+          <Route exact path='/resources' component={Resources}/>
+          <Route exact path='/about' component={About}/>
+          <Route path='*' component={Error404} />
+        </Switch>
       </Layout>
     </Router>
   );

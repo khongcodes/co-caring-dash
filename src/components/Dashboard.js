@@ -1,7 +1,6 @@
 import React from 'react'
 
 import TableauViz from './TableauViz';
-import placeholder from '../images/placeholder-tableau.png'
 
 import dashboardStyles from '../styles/dashboard.module.scss';
 

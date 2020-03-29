@@ -2,11 +2,11 @@ import React from 'react'
 
 const RShinyIframe = props => {
   return (
-    <div>
+    <div className={props.className} >
       <iframe 
         src={props.src}
-        height={props.height}
-        width={props.width}
+        height='100%'
+        width='100%'
         frameborder="0"
         title={props.title}
       />

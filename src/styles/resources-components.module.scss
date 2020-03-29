@@ -1,8 +1,9 @@
 @import "typecolor";
 
 .tipListContainer {
-  // background-color: pink;
+  background-color: pink;
   display: flex;
+  flex-direction: column;
   
   margin: 7.375rem 0 13.75rem;
 
@@ -10,7 +11,7 @@
     width: 67.25rem;
     height: 27.25rem;
     margin: 0 auto 8.44rem;
-    // background-color: yellow;
+    background-color: yellow;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1.375rem;

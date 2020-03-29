@@ -25,7 +25,7 @@ export const TipItem = ({imgClass, title, copy, width, textSide}) => (
       <>
         <div className={resourceStyles.text}>
           <h4>{title}</h4>
-          {copy}
+          <p>{copy}</p>
         </div>
         
         <div className={resourceStyles[imgClass]}/>

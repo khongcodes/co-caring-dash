@@ -8,11 +8,11 @@ import layoutStyles from "../styles/layout.module.scss";
 const Header = () => (
   <div className={layoutStyles.header}>
     
-    <div className={layoutStyles.titleContainer}>
+    {/* <div className={layoutStyles.titleContainer}>
       <Link to='/'>
         <h1>Co-Caring</h1>
       </Link>
-    </div>
+    </div> */}
 
     <div className={layoutStyles.navLinkContainer}>
       <NavLink exact className={layoutStyles.navLink} activeClassName={layoutStyles.navLinkActive}

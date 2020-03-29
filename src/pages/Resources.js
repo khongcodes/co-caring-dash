@@ -1,8 +1,12 @@
 import React from 'react'
 
+import TopBanner from '../components/TopBanner';
+
 const Resources = () => {
   return (
     <div>
+      <TopBanner />
+
       <div className='paragraphContainer'>
         <h2>Resources</h2>
 

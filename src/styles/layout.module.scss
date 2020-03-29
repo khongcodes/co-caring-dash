@@ -29,6 +29,19 @@ $burger-active-color: $vy-blue-regular;
       font-family: $script-font;
     }
   }
+
+  .navLinkContainer {
+    float: right;
+
+    .navLink {
+      color: red;
+    }
+
+    .navLinkActive {
+      @extend .navLink;
+      color: black;
+    }
+  }
 }
 
 

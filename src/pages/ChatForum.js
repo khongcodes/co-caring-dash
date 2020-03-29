@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Connect = () => {
+const ChatForum = () => {
   return (
     <div>
       <div className='paragraphContainer'>
@@ -12,4 +12,4 @@ const Connect = () => {
   )
 }
 
-export default Connect
+export default ChatForum

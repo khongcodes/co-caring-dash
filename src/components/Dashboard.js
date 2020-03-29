@@ -6,7 +6,17 @@ import placeholder from '../images/placeholder-tableau.png'
 import dashboardStyles from '../styles/dashboard.module.scss';
 
 const Dashboard = () => {
-  return (
+  const vizOptions1 = {
+    height: '1000px',
+    width: '100%'
+  }
+
+  const vizOptions2 = {
+    height: '900px',
+    width: '100%'
+  }
+
+  return ( 
     <div>
       
 
@@ -16,7 +26,8 @@ const Dashboard = () => {
           style={{width: '100%'}}
         />         */}
 
-        <TableauViz />
+        <TableauViz vizName='Dashboard1' vizOptions={vizOptions1} />
+        <TableauViz vizName='Dashboard2' vizOptions={vizOptions2} />
 
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import TableauViz from './TableauViz';
+import placeholder from '../images/placeholder-tableau.png'
 
 import dashboardStyles from '../styles/dashboard.module.scss';
 
@@ -11,7 +12,9 @@ const Dashboard = () => {
 
       <div className={dashboardStyles.vizGrid}>
         
-        
+        <img src={placeholder}
+          style={{width: '100%'}}
+        />        
 
       </div>
     </div>

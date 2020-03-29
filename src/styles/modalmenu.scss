@@ -1,8 +1,4 @@
-@mixin smallerMedia {
-  @media (max-width: 660px) {
-    @content;
-  }
-}
+@import "mediasizes";
 
 $sans-serif-font: 'Open Sans', sans-serif;
 $script-font: 'Dancing Script', cursive;

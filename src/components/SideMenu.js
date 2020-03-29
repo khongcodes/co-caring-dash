@@ -28,7 +28,7 @@ const SideMenu = ({ toggleMenu, menuActive, children }) => (
 
         <SideMenuLink
           toggleMenu = {toggleMenu}
-          title = "Home"
+          title = "Dashboard"
           destination = "/"
         />
 
@@ -36,12 +36,6 @@ const SideMenu = ({ toggleMenu, menuActive, children }) => (
           toggleMenu = {toggleMenu}
           title = "About Us"
           destination = "/about"
-        />
-
-        <SideMenuLink
-          toggleMenu = {toggleMenu}
-          title = "Dashboard"
-          destination = "/dashboard"
         />
 
         <SideMenuLink

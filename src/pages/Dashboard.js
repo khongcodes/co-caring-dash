@@ -1,6 +1,5 @@
 import React from 'react'
 
-import RShinyIframe from '../components/RShinyIframe';
 import TableauViz from '../components/TableauViz';
 
 import dashboardStyles from '../styles/dashboard.module.scss';
@@ -15,11 +14,7 @@ const Dashboard = () => {
 
       <div className={dashboardStyles.vizGrid}>
         
-        <RShinyIframe 
-          className = {dashboardStyles.rShinyContainer}
-          src = "https://my-shiny-app-creation.shinyapps.io/TrendChart/"
-          title = 'shinytrendchart'
-        />
+        
 
       </div>
     </div>

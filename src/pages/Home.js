@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 
-import RShinyIframe from '../components/RShinyIframe';
 import TableauViz from '../components/TableauViz';
 
 const Home = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import TableauViz from '../components/TableauViz';
+import TableauViz from './TableauViz';
 
 import dashboardStyles from '../styles/dashboard.module.scss';
 

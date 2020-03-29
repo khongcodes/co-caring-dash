@@ -7,10 +7,19 @@ const Home = () => {
   useEffect(() => {
     document.title = 'Co-Caring'
   })
+
+  const imgProps = {
+
+  }
   
   return (
     <>
-      <TopBanner />
+      <TopBanner 
+        title = "Co-Caring"
+        copy = "NOTFINALTEXT Now more than ever, Vytality Health is bringing people together for positive impact in response to the novel coronavirus"
+        button = {true}
+        bannerClass = 'home'
+      />
       
       <Dashboard />
 

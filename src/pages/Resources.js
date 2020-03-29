@@ -5,7 +5,12 @@ import TopBanner from '../components/TopBanner';
 const Resources = () => {
   return (
     <div>
-      <TopBanner />
+      <TopBanner 
+        title='Resources'
+        copy='Review our tips on how to #shelterinplace.'
+        button = {false}
+        bannerClass = 'resources'
+      />
 
       <div className='paragraphContainer'>
         <h2>Resources</h2>

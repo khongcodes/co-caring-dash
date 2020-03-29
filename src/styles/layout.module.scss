@@ -18,9 +18,8 @@ $burger-active-color: $vy-blue-regular;
   .titleContainer {
     display: inline-block;
     margin: 0.5rem;
-    margin-left: 2rem;
+    margin-left: 8.4rem;
     height: 3rem;
-    // width: 10rem;
 
     h1 {
       margin-block-start: 0.5rem;
@@ -32,14 +31,28 @@ $burger-active-color: $vy-blue-regular;
 
   .navLinkContainer {
     float: right;
+    margin-top: 1.6rem;
+    margin-right: 8.4rem;
+    display: flex;
+    // width: 40rem;
+    // height: 10rem;
+    // background-color: pink;  
 
     .navLink {
-      color: red;
+      margin: 0 1rem;
+      width: 7.5rem;
+      height: 1.25rem;
+      line-height: 1.375rem;
+      text-align: center;
+      letter-spacing: 0.05rem;
+      color: black; 
+
+      // background-color:green;
     }
 
     .navLinkActive {
       @extend .navLink;
-      color: black;
+      font-weight: bold;
     }
   }
 }
@@ -48,7 +61,7 @@ $burger-active-color: $vy-blue-regular;
 
 main {
   // background-color: rgb(255, 185, 185);
-  width: 94vw;
+  // width: 94vw;
   min-height: fit-content;
   height: 94vh;
   margin: 0 auto;

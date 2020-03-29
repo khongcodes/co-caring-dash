@@ -12,9 +12,11 @@ const Dashboard = () => {
 
       <div className={dashboardStyles.vizGrid}>
         
-        <img src={placeholder}
+        {/* <img src={placeholder}
           style={{width: '100%'}}
-        />        
+        />         */}
+
+        <TableauViz />
 
       </div>
     </div>

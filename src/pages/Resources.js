@@ -23,7 +23,16 @@ const Resources = () => {
         imgClass = 'resources'
       />
 
-      <TextSection title='Resources for You'/>
+      <TextSection title='Resources for You'>
+        <p>Local resources in your area — public health departments, hospitals, nursing homes and childcare — are available by clicking the menu for your state and zoom to your area. To drag the map over: 
+        <ol>
+          <li>Click on the arrow in the left menu,</li>
+          <li>Click on the crossed arrows, and</li>
+          <li>Click on the map and drag!</li>
+        </ol>
+        Then, hover over a dot to see the name of the institution and contact info.</p>
+      </TextSection>
+
       <div className={vizStyles.viz3Container}>
         <TableauViz vizName='LocationsDashboard?publish=yes' vizOptions={vizOptions3} />
       </div>

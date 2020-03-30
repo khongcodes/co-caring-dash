@@ -43,6 +43,10 @@ $title-color: black;
     // height: 10rem;
     // background-color: pink;  
 
+    @include mediumMedia {
+      margin: 5rem auto 0;
+    }
+
     @include smallerMedia {
       display: none;
     }

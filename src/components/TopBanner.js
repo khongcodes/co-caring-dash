@@ -10,7 +10,8 @@ const TopBanner = ({title, copy, button, imgClass}) => {
     button.position='relative'
     button.top='0.1rem'
     setTimeout(()=>{
-      button.top='0'
+      button.top='0';
+      window.open('https://www.reddit.com/r/vytality/', '_blank');
     },100)
   }
   
@@ -24,13 +25,11 @@ const TopBanner = ({title, copy, button, imgClass}) => {
         <p>{copy}</p>
         
         {button ? 
-          <Link to='/about'>
-            <button className={topBannerStyles.button}
-              onClick = {handleClick}
-            >
-              LEARN MORE
-            </button>
-          </Link>
+          <button className={topBannerStyles.button}
+            onClick = {handleClick}
+          >
+            LEARN MORE
+          </button>
         : <></>
         }
       </div>

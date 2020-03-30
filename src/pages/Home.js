@@ -27,9 +27,13 @@ const Home = () => {
       <TextDivider />
 
       <div>
-        <Link to='/reddit'>
-          <p style={{textAlign: 'center'}}>Connect to #co-caring people and projects to slow COVID-19 spread here.</p>
-        </Link>
+        {/* <Link to='/reddit'> */}
+          <p style={{textAlign: 'center'}}>
+            <a href='https://www.reddit.com/r/vytality/' target="_blank">
+              Connect to #co-caring people and projects to slow COVID-19 spread here.
+            </a>
+          </p>
+        {/* </Link> */}
       </div>
 
       <Dashboard />

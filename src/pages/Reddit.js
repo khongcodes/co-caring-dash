@@ -8,7 +8,8 @@ const Reddit = () => {
   useEffect(() => {
     document.title = 'Reddit'
     setTimeout(() => {
-      window.location.href = 'https://www.reddit.com/r/vytality/'
+      window.open('https://www.reddit.com/r/vytality/', '_blank')
+      // window.location.href = 'https://www.reddit.com/r/vytality/'
     }, 1200)
   })
 

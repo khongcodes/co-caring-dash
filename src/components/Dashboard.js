@@ -7,12 +7,12 @@ import dashboardStyles from '../styles/dashboard.module.scss';
 const Dashboard = () => {
   const vizOptions1 = {
     height: '1000px',
-    width: '100%'
+    width: '75%'
   }
 
   const vizOptions2 = {
     height: '900px',
-    width: '100%'
+    width: '75%'
   }
 
   return ( 

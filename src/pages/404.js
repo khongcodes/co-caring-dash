@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import TextSection from '../components/TextSection'
 
 const Error404 = () => {
+  useEffect(() => {
+    document.title = '404 Error - Page not found'
+  })
+
   return (
     <div style={{paddingTop: '5.25rem'}}>
 

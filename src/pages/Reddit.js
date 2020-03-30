@@ -7,7 +7,7 @@ import loadingSpinner from '../images/src-spinner.gif'
 
 const Reddit = () => {
   useEffect(() => {
-    document.title = 'Reddit'
+    document.title = '#Co-Caring Reddit'
     setTimeout(() => {
       window.open('https://www.reddit.com/r/vytality/', '_blank')
       // window.location.href = 'https://www.reddit.com/r/vytality/'

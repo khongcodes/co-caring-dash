@@ -6,7 +6,7 @@ import TextDivider from '../components/TextDivider';
 
 const About = () => {
   useEffect(() => {
-    document.title = 'About Co-Caring'
+    document.title = 'About #Co-Caring'
   })
 
   const pStyle = {

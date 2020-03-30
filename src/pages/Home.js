@@ -8,7 +8,7 @@ import Dashboard from '../components/Dashboard';
 
 const Home = () => {
   useEffect(() => {
-    document.title = 'Co-Caring'
+    document.title = '#Co-Caring Dashboard'
   })
   
   return (

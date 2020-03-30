@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import TopBanner from '../components/TopBanner';
 import TextSection from '../components/TextSection';
@@ -9,6 +9,10 @@ import { TipList, TipItem, TrendingList, TrendingItem } from '../components/Reso
 import vizStyles from '../styles/dashboard.module.scss'
 
 const Resources = () => {
+  useEffect(() => {
+    document.title = '#Co-Caring Resources'
+  })
+
   const vizOptions3 = {
     height: '900px',
     // width: '1000px',

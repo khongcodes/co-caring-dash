@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 // import "../styles/modalmenu.scss"
+import vytalityLogo from '../images/vytality-logo.png'
 import layoutStyles from "../styles/layout.module.scss";
 
 
@@ -36,7 +37,9 @@ const Header = () => (
 
 const Footer = () => (
   <div className={layoutStyles.footer}>
-
+    <img src={vytalityLogo} alt='Vytality logo'/>
+    <p>info@vytality.co | vytality.co</p>
+    <p>© 2020 by Peakfoqus LLC</p>
   </div>
 )
 

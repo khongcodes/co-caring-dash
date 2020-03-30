@@ -14,13 +14,13 @@ const Home = () => {
     <>
       <TopBanner 
         title = "Co-Caring"
-        copy = "NOTFINALTEXT Now more than ever, Vytality Health is bringing people together for positive impact in response to the novel coronavirus"
+        copy = "We are bringing people together for positive impact in response to the novel coronavirus."
         button = {true}
         imgClass = 'home'
       />
       
       <TextSection title='Mission Statement'>
-        <p>We are all caregivers and care receivers. Our current situation calls us to both. And in a crisis, efforts like neighbors helping neighbors, to organizations working with citizens and each other -- are often not scalable and disjointed. In response to the ongoing challenge to track the spread of COVID-19, we have created the #Co-Caring Dashboard which projects future coronavirus growth in the local California community.</p>
+        <p>We are all caregivers and care receivers. As private individuals and as organizations, our current situation calls us to both. And in a crisis, efforts -- like neighbors helping neighbors, to organizations working with citizens and other organizations -- are often not scalable. In response to the ongoing challenge to track the spread of COVID-19 and to connect individuals, organizations and communities who want to help, we have created the #Co-Caring Dashboard.</p>
       </TextSection>
 
       <TextDivider />

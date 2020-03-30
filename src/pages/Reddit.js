@@ -4,9 +4,9 @@ import TextSection from '../components/TextSection';
 
 import loadingSpinner from '../images/src-spinner.gif'
 
-const ChatForum = () => {
+const Reddit = () => {
   useEffect(() => {
-    document.title = 'Chat Forum'
+    document.title = 'Reddit'
     setTimeout(() => {
       window.location.href = 'https://www.reddit.com/r/vytality/'
     }, 1200)
@@ -25,4 +25,4 @@ const ChatForum = () => {
   )
 }
 
-export default ChatForum
+export default Reddit

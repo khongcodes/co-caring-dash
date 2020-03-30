@@ -20,8 +20,8 @@ const Header = () => (
       >Dashboard</NavLink>
       
       <NavLink exact className={layoutStyles.navLink} activeClassName={layoutStyles.navLinkActive}
-        to = '/chat-forum'
-      >Chat Forum</NavLink>
+        to = '/reddit'
+      >Co-Caring Chat</NavLink>
 
       <NavLink exact className={layoutStyles.navLink} activeClassName={layoutStyles.navLinkActive}
         to = '/resources'

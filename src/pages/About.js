@@ -31,7 +31,7 @@ const About = () => {
 
       <TextSection title='Our Story'>
         <p style={{pStyle}}>The #Co-Caring Dashboard tracks COVID-19 spread in counties and states. The team building the #Co-Caring Dashboard participated in the March 2020 Pandemic Response Hackathon organized by Datavant, and was created in alignment with Vytality Health’s #Co-Caring movement.</p>
-        <p style={{pStyle}}>We are all caregivers and care receivers. As private individuals and as organizations, we are called to both roles. And in a crisis, efforts -- like neighbors helping neighbors, to organizations working with citizens and other organizations -- are often not scalable. Vytality #Co-caring brings good people, leaders and info together for greater impact, and we're building a mobile app to ease communication. Check out <a href='http://vytality.co'>http://vytality.co</a> for more information.</p>
+        <p style={{pStyle}}>We are all caregivers and care receivers. As private individuals and as organizations, we are called to both roles. And in a crisis, efforts -- like neighbors helping neighbors, to organizations working with citizens and other organizations -- are often not scalable. Vytality #Co-Caring brings good people, leaders and info together for greater impact, and we're building a mobile app to ease communication. Check out <a href='http://vytality.co'>http://vytality.co</a> for more information.</p>
         <p style={{pStyle}}>And please, stay healthy and be well.</p>
       </TextSection>
 

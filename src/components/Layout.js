@@ -1,12 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 // import "../styles/modalmenu.scss"
 import vytalityLogo from '../images/vytality-logo.png'
 import layoutStyles from "../styles/layout.module.scss";
 
+const MobileBurger = ({menuActive, toggleMenu}) => (
+  <div 
+    className = { menuActive ? layoutStyles.burgerActive : layoutStyles.burger }
+    onClick = {toggleMenu}
+  >
+    <div/>
+    <div/>
+    <div/>
+  </div>
+)
 
-const Header = () => (
+const Header = ({menuActive, toggleMenu}) => (
   <div className={layoutStyles.header}>
     
     {/* <div className={layoutStyles.titleContainer}>
@@ -14,6 +24,8 @@ const Header = () => (
         <h1>Co-Caring</h1>
       </Link>
     </div> */}
+
+    <MobileBurger menuActive={menuActive} toggleMenu={toggleMenu}/>
 
     <div className={layoutStyles.navLinkContainer}>
       <NavLink exact className={layoutStyles.navLink} activeClassName={layoutStyles.navLinkActive}
@@ -44,10 +56,15 @@ const Footer = () => (
 )
 
 const Layout = ({ children }) => {
+  const [menuActive, setMenuActive] = useState(false)
+  const toggleMenu = () => {
+    console.log(menuActive)
+    setMenuActive(!menuActive)
+  }
 
   return (
     <>
-      <Header />
+      <Header menuActive={menuActive} toggleMenu={toggleMenu}/>
       {/* margin between banner and first textSection is margin-bottom on .container topbanner.module.scss */}
 
       <main>{children}</main>

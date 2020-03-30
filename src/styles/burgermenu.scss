@@ -1,0 +1,83 @@
+@import "mediasizes";
+
+%basicBurgerMenu {
+  z-index: 4;
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  padding: 4rem 0 2rem;
+  display:none;
+
+  @include smallerMedia {
+    display: block;
+    text-align: center;
+
+    p {
+      margin-block-end: 3rem;
+
+      a {
+        color: black;
+      }
+    }
+  }
+}
+
+.burgerMenu, .burgerMenu-exit-done {
+  top: -50rem;
+  @extend %basicBurgerMenu;
+}
+
+.burgerMenu-enter {
+  top: -50rem;
+  @extend %basicBurgerMenu;
+}
+
+.burgerMenu-enter-active {
+  top: 0;
+  transition: top 200ms;
+  @extend %basicBurgerMenu;
+}
+
+.burgerMenu-enter-done, .burgerMenu-exit {
+  top: 0;
+  @extend %basicBurgerMenu;
+}
+
+.burgerMenu-exit-active {
+  top: -50rem;
+  transition: top 400ms;
+  @extend %basicBurgerMenu;
+}
+
+
+
+.burger {
+  display: hidden;
+
+  @include smallerMedia {
+    float: left;
+    margin: 1.35rem 0.5rem 1rem 1rem;
+    width: 1.5rem;
+    height: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+    div {
+      background-color: black;
+      width: 100%;
+      height: 2px;
+    }
+  }
+}
+
+.burgerMenuExit {
+  margin: -2.5rem 2rem 0;
+  float: right;
+  width: fit-content;
+  font-size: x-large;
+  cursor: none;
+}

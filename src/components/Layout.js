@@ -1,24 +1,13 @@
 import React, {useState} from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
+import { MobileBurger, BurgerMenu } from '../components/BurgerMenu';
+
 // import "../styles/modalmenu.scss"
+import '../styles/burgermenu.scss'
 import vytalityLogo from '../images/vytality-logo.png'
 import layoutStyles from "../styles/layout.module.scss";
 
-const MobileBurger = ({menuActive, toggleMenu}) => (
-  <div 
-    className = { menuActive ? layoutStyles.burgerActive : layoutStyles.burger }
-    onClick = {toggleMenu}
-  >
-    <div/>
-    <div/>
-    <div/>
-  </div>
-)
-
-// const BurgerMenu = () => (
-
-// )
 
 const Header = ({menuActive, toggleMenu}) => (
   <div className={layoutStyles.header}>
@@ -35,7 +24,7 @@ const Header = ({menuActive, toggleMenu}) => (
       <NavLink exact className={layoutStyles.navLink} activeClassName={layoutStyles.navLinkActive}
         to = '/'
       >Dashboard</NavLink>
-      
+          
       <NavLink exact className={layoutStyles.navLink} activeClassName={layoutStyles.navLinkActive}
         to = '/reddit'
       >Co-Caring Chat</NavLink>
@@ -51,13 +40,22 @@ const Header = ({menuActive, toggleMenu}) => (
   </div>
 )
 
+
+
+
 const Footer = () => (
   <div className={layoutStyles.footer}>
     <img src={vytalityLogo} alt='Vytality logo'/>
-    <p>info@vytality.co | vytality.co</p>
+    <p>
+      <a href='mailto:info@vytality.co'>info@vytality.co</a>
+       | 
+      <a href='http://vytality.co'>vytality.co</a>
+    </p>
     <p>© 2020 by Peakfoqus LLC</p>
   </div>
 )
+
+
 
 const Layout = ({ children }) => {
   const [menuActive, setMenuActive] = useState(false)
@@ -68,8 +66,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header menuActive={menuActive} toggleMenu={toggleMenu}/>
+      <Header menuActive={menuActive} toggleMenu={toggleMenu} />
       {/* margin between banner and first textSection is margin-bottom on .container topbanner.module.scss */}
+
+      <BurgerMenu menuActive={menuActive} toggleMenu={toggleMenu} />
 
       <main>{children}</main>
 

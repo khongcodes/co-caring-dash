@@ -67,22 +67,22 @@ const Resources = () => {
           imgClass = 'trending1'
           title = 'The Right Way to Wash Your Hands'
           copy = 'What the experts are saying.'
-          url = ''
-        />
-
-        {/* <TrendingItem 
-          imgClass = {}
-          title = {}
-          copy = {}
-          url = {}
+          url = 'https://www.cdc.gov/handwashing/when-how-handwashing.html'
         />
 
         <TrendingItem 
-          imgClass = {}
-          title = {}
-          copy = {}
-          url = {}
-        /> */}
+          imgClass = 'trending2'
+          title = 'CDC: Stress and Coping'
+          copy = 'Need help? Know someone who does?'
+          url = 'https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/managing-stress-anxiety.html'
+        />
+
+        <TrendingItem 
+          imgClass = 'trending3'
+          title = 'Coronavirus: The Hammer and the Dance'
+          copy = 'What the next 18 months can look like.'
+          url = 'https://medium.com/@tomaspueyo/coronavirus-the-hammer-and-the-dance-be9337092b56?fbclid=IwAR0-e2v0Z9_2wN8gnzBCYZwlGpbtW5cygZ62T_7N_G7DBz-jYj6dkdZsxXU'
+        />
       </TrendingList>
 
     </div>

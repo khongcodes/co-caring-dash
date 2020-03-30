@@ -57,42 +57,64 @@
 }
 
 .trendingListContainer {
-  background-color: pink;
   width: 1259px;
-  height: 600px;
+  height: 520px;
   margin: 7.375rem auto 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 28px;
 
   .trendingItemContainer {
-    background-color: yellow;
+    color: black;
     width: 401px;
-    height: 359px;
 
     h5 {
-
+      color: black;
+      font-size: 1.5rem;
+      margin-block-start: 1rem;
+      margin-block-end: 0.5rem;
     }
 
     p {
-
+      color: black;
+      margin-block-start: 0;
+      font-weight: lighter;
     }
 
     .trendingImg {
       @extend .imgContainer;
       width: 401px;
+      height: 359px;
     }
 
     .trending1 {
-      @extend .imgContainer;
+      @extend .trendingImg;
+      background-image: url(../images/resources-trending-1.jpg);
+      background-size: 538px 359px;
+      background-position: center;
     }
 
     .trending2 {
-      @extend .imgContainer;
+      @extend .trendingImg;
+      background-image: url(../images/resources-trending-2.jpg);
+      background-size: 404px 404px;
+      background-position: center;
     }
 
     .trending3 {
-      @extend .imgContainer;
+      @extend .trendingImg;
+      background-image: url(../images/resources-trending-3.jpg);
+      background-size: 401px 600.39px;
+      background-position: center;
     }
+  }
+
+  .trendingItemContainer:hover .trendingImg {
+    filter: brightness(1.1);
+    transition: 0.3s ease
+  }
+
+  .trendingItemContainer:hover h5 {
+    text-decoration: underline;
   }
 }

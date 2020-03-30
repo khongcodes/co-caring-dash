@@ -25,7 +25,7 @@ const Resources = () => {
 
       <TextSection title='Resources for You'/>
       <div className={vizStyles.viz3Container}>
-        {/* <TableauViz vizName='LocationsDashboard?publish=yes' vizOptions={vizOptions3} /> */}
+        <TableauViz vizName='LocationsDashboard?publish=yes' vizOptions={vizOptions3} />
       </div>
 
       <TextDivider/>

@@ -19,7 +19,7 @@ const Reddit = () => {
       <TextSection title='You are being redirected to "https://www.reddit.com/r/vytality/"...'/>
 
       <div style={{margin: '0 auto', width: 'fit-content', marginTop: '1rem'}} >
-        <img src={loadingSpinner} />
+        <img src={loadingSpinner} alt='loading-spinner'/>
       </div>
 
     </div>

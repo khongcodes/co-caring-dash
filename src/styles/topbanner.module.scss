@@ -123,11 +123,10 @@
     box-sizing: border-box;
     outline: none;
     cursor: pointer;
-  }
 
-  .button:hover {
-    background-color: rgb(26, 178, 238);
-    // text-shadow: 0 0 4px rgba(255, 255, 255, 0.521);
-    transition: 0.2 ease-in;
+    &:hover {
+      background-color: rgb(26, 178, 238);
+      transition: 0.2 ease-in;
+    }
   }
 }

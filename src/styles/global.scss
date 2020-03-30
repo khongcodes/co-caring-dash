@@ -4,23 +4,15 @@
 @import "mediasizes", "typecolor";
 
 body {
-  // background-color: red;
   margin: 0;
   font-family: $sans-serif-font;
-
-  @include smallerMedia {
-    // background-color: green;
-  }
 }
 
 a {
   text-decoration: none;
   font-weight: bold;
   color: $mockup-blue-regular;
-}
-
-a:hover {
-  color: $mockup-blue-textAccent;
+  &:hover { color: $mockup-blue-textAccent }
 }
 
 .redditRedirectText {

@@ -43,7 +43,7 @@ export const TrendingList = ({children}) => (
 
 export const TrendingItem = ({imgClass, title, copy, url}) => (
   <div className={resourceStyles.trendingItemContainer}>
-    <a href={url} target="_blank">
+    <a href={url} target="_blank" rel="noopener noreferrer">
       <div className={resourceStyles[imgClass]}/>
 
       <h5>{title}</h5>

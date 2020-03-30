@@ -171,14 +171,14 @@
       background-size: 401px 600.39px;
       background-position: center;
     }
-  }
 
-  .trendingItemContainer:hover .trendingImg {
-    filter: brightness(1.1);
-    transition: 0.3s ease
-  }
+    &:hover {
+      .trendingImg {
+        filter: brightness(1.1);
+        transition: 0.3s ease
+      }
 
-  .trendingItemContainer:hover h5 {
-    text-decoration: underline;
+      h5 { text-decoration: underline; }
+    }
   }
 }

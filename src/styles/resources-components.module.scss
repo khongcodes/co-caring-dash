@@ -1,5 +1,11 @@
 @import "typecolor";
 
+@mixin mediumMedia {
+  @media (max-width:1260px) {
+    @content
+  }
+}
+
 .imgContainer {
   background-repeat: no-repeat;
 }
@@ -54,6 +60,9 @@
       background-position: -8.3rem;
     }
   }
+
+  // width95%
+  // margin side auto
 }
 
 .trendingListContainer {

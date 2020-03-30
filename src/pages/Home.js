@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import TopBanner from '../components/TopBanner';
 import TextSection from '../components/TextSection';
@@ -25,10 +26,14 @@ const Home = () => {
 
       <TextDivider />
 
+      <div>
+        <Link to='/reddit'>
+          <p style={{textAlign: 'center'}}>Connect to #co-caring people and projects to slow COVID-19 spread here.</p>
+        </Link>
+      </div>
 
       <Dashboard />
 
-      {/* <TableauViz /> */}
     </>
   )
 }

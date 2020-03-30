@@ -1,5 +1,9 @@
 @import "typecolor";
 
+.imgContainer {
+  background-repeat: no-repeat;
+}
+
 .tipListContainer {
   display: flex;
   flex-direction: column;
@@ -12,7 +16,7 @@
     margin: 0 auto 8.44rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1.375rem;
+    column-gap: 1.375rem;
 
     .text {
       h4 {
@@ -27,10 +31,6 @@
         line-height: 30px;
         margin-block-start: 1rem;
       }
-    }
-
-    .imgContainer {
-      background-repeat: no-repeat;
     }
 
     .tip1Exercise {
@@ -58,7 +58,41 @@
 
 .trendingListContainer {
   background-color: pink;
-  margin-top: 7.375rem;
+  width: 1259px;
+  height: 600px;
+  margin: 7.375rem auto 0;
   display: grid;
-  
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 28px;
+
+  .trendingItemContainer {
+    background-color: yellow;
+    width: 401px;
+    height: 359px;
+
+    h5 {
+
+    }
+
+    p {
+
+    }
+
+    .trendingImg {
+      @extend .imgContainer;
+      width: 401px;
+    }
+
+    .trending1 {
+      @extend .imgContainer;
+    }
+
+    .trending2 {
+      @extend .imgContainer;
+    }
+
+    .trending3 {
+      @extend .imgContainer;
+    }
+  }
 }

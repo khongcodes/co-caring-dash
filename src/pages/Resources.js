@@ -25,7 +25,7 @@ const Resources = () => {
 
       <TextSection title='Resources for You'/>
       <div className={vizStyles.viz3Container}>
-        <TableauViz vizName='LocationsDashboard?publish=yes' vizOptions={vizOptions3} />
+        {/* <TableauViz vizName='LocationsDashboard?publish=yes' vizOptions={vizOptions3} /> */}
       </div>
 
       <TextDivider/>
@@ -63,12 +63,12 @@ const Resources = () => {
 
       <TextSection title="What's Trending"/>
       <TrendingList>
-        {/* <TrendingItem 
-          imgClass = {}
-          title = {}
-          copy = {}
-          url = {}
-        /> */}
+        <TrendingItem 
+          imgClass = 'trending1'
+          title = 'The Right Way to Wash Your Hands'
+          copy = 'What the experts are saying.'
+          url = ''
+        />
 
         {/* <TrendingItem 
           imgClass = {}

@@ -17,13 +17,7 @@ const Dashboard = () => {
 
   return ( 
     <div>
-      
-
       <div className={dashboardStyles.vizGrid}>
-        
-        {/* <img src={placeholder}
-          style={{width: '100%'}}
-        />         */}
 
         <TableauViz vizName='Dashboard1' vizOptions={vizOptions1} />
         <TableauViz vizName='Dashboard2' vizOptions={vizOptions2} />

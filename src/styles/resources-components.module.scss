@@ -1,6 +1,6 @@
-@import "typecolor";
+@import "mediasizes" ,"typecolor";
 
-@mixin mediumMedia {
+@mixin laptopMedia {
   @media (max-width:1260px) {
     @content
   }
@@ -59,10 +59,20 @@
       background-size: 660px 436px;
       background-position: -8.3rem;
     }
-  }
 
-  // width95%
-  // margin side auto
+    @include laptopMedia {
+      width: 100%;
+    }
+
+    @include mediumMedia {
+      
+    }
+  }
+  
+  @include laptopMedia {
+    width: 95%;
+    margin: 7.375rem auto 13.75rem;
+  }
 }
 
 .trendingListContainer {
@@ -90,10 +100,18 @@
       font-weight: lighter;
     }
 
+    @include laptopMedia {
+      width: 100%;
+    }
+
     .trendingImg {
       @extend .imgContainer;
       width: 401px;
       height: 359px;
+
+      @include laptopMedia{
+        width: 100%;
+      }
     }
 
     .trending1 {
@@ -125,5 +143,9 @@
 
   .trendingItemContainer:hover h5 {
     text-decoration: underline;
+  }
+
+  @include laptopMedia {
+    width: 95%;
   }
 }

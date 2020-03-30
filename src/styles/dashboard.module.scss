@@ -22,6 +22,18 @@
 
   iframe {
     margin: 0 auto;
-    width: 90%;
+    width: 1000px;
+
+    @include mediumMedia {
+      width: 90%;
+    }
+    @include smallerMedia {
+      overflow: scroll;
+    }
   }
+}
+
+
+#viz-client-container {
+  width: 100%;
 }

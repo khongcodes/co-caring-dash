@@ -16,6 +16,10 @@ const MobileBurger = ({menuActive, toggleMenu}) => (
   </div>
 )
 
+// const BurgerMenu = () => (
+
+// )
+
 const Header = ({menuActive, toggleMenu}) => (
   <div className={layoutStyles.header}>
     

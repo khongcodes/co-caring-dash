@@ -8,7 +8,7 @@ export const TipList = ({children}) => (
   </div>
 )
 
-export const TipItem = ({imgClass, title, copy, width, textSide}) => (
+export const TipItem = ({imgClass, title, copy, textSide}) => (
   
   <div className={resourceStyles.tipContainer}>
     
@@ -16,14 +16,14 @@ export const TipItem = ({imgClass, title, copy, width, textSide}) => (
       <>
         <div className={resourceStyles[imgClass]}/>
 
-        <div className={resourceStyles.text} style={{width: width}}>
+        <div className={resourceStyles.text} >
           <h4>{title}</h4>
           <p>{copy}</p>
         </div>
       </>
     :
       <>
-        <div className={resourceStyles.text} style={{width: width}}>
+        <div className={resourceStyles.text} >
           <h4>{title}</h4>
           <p>{copy}</p>
         </div>

@@ -16,6 +16,11 @@ $burger-active-color: $vy-blue-regular;
   z-index: 3;
   padding-top: 0.5rem;
 
+  @include smallerMedia {
+    height: 58px;
+    padding-top: 0;
+  }
+
   .titleContainer {
     display: inline-block;
     margin-top: 2.8rem;
@@ -33,11 +38,11 @@ $burger-active-color: $vy-blue-regular;
 
   .burger {
     display: hidden;
-    
+
     @include smallerMedia {
       float: left;
-      margin: 1.75rem 0.5rem 1.75rem 2rem;
-      width: 2rem;
+      margin: 1.35rem 0.5rem 1rem 1rem;
+      width: 1.5rem;
       height: 1rem;
       display: flex;
       flex-direction: column;
@@ -45,10 +50,9 @@ $burger-active-color: $vy-blue-regular;
       cursor: pointer;
 
       div {
-        background-color: $burger-color;
+        background-color: black;
         width: 100%;
-        border-radius: 12%;
-        height: 15%;
+        height: 2px;
       }
     }
   }
@@ -61,6 +65,10 @@ $burger-active-color: $vy-blue-regular;
     // width: 40rem;
     // height: 10rem;
     // background-color: pink;  
+
+    @include smallerMedia {
+      display: none;
+    }
 
     .navLink {
       margin: 0 1rem;
@@ -92,7 +100,7 @@ main {
   padding-bottom: 17.25rem;
 
   @include smallerMedia {
-    // background-color: green;
+    padding-bottom: 133px;
   }
 }
 

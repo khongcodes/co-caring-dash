@@ -11,7 +11,7 @@ import vizStyles from '../styles/dashboard.module.scss'
 const Resources = () => {
   const vizOptions3 = {
     height: '900px',
-    width: '1000px',
+    // width: '1000px',
   }
 
   return (
@@ -40,7 +40,7 @@ const Resources = () => {
       <TextDivider/>
 
 
-      <TextSection title='Our Top Tips' width='58rem'>
+      <TextSection title='Our Top Tips'>
         <p>Through establishing routines of exercise, social connection, and inspiration we will get through this time together.</p>
       </TextSection>
       <TipList>
@@ -48,7 +48,6 @@ const Resources = () => {
           imgClass = 'tip1Exercise'
           title = 'Exercise'
           copy = 'Seek moments of growth to challenge yourself. Find a workout video online, do some home yoga, or go for a walk around your neighborhood while sticking to the 6 feet apart rule.'
-          width = '530px'
           textSide = 'right'
         />
         
@@ -56,7 +55,6 @@ const Resources = () => {
           imgClass = 'tip2SocialConnection'
           title = 'Social Connection'
           copy = 'Just because we’re sheltering doesn’t mean we can’t stay connected. Find new ways to keep in touch with your community and friends. If you’re a texter, hop on the phone for a call. If you miss seeing your friends faces, try out Skype, FaceTime, Facebook Messenger, or Zoom. The options are plenty!'
-          width = '500px'
           textSide = 'left'
         />
 
@@ -64,7 +62,6 @@ const Resources = () => {
           imgClass = 'tip3Inspiration'
           title = 'Inspiration'
           copy = 'In times of crisis, art is more important than ever. Take a virtual tour of your favorite museum, watch a movie you’ve been meaning to see, or start a virtual book club with your community.'
-          width = '524px'
           textSide = 'right'
         />
       </TipList>

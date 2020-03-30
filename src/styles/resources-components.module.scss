@@ -8,6 +8,7 @@
 
 .imgContainer {
   background-repeat: no-repeat;
+  @include smallerMedia {height: 263px; grid-area: image;}
 }
 
 .tipListContainer {
@@ -24,19 +25,37 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 1.375rem;
 
+    @include laptopMedia {
+      width: 100%;
+    }
+
+    @include smallerMedia {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 0.8fr;
+      grid-template-areas: 
+        "image"
+        "text";
+      height: fit-content;
+      margin: 0 auto 1rem;
+    }
+
     .text {
       h4 {
         font-size: 24px;
         color: $mockup-blue-textAccent;
         margin-block-start: 7.5rem;
         margin-block-end: 1rem;
+        @include smallerMedia {margin-block-start: 10.74px; font-size: 18px;}
       }
 
       p {
         font-size: 18px;
         line-height: 30px;
         margin-block-start: 1rem;
+        @include smallerMedia {font-size: 14px;}
       }
+      @include smallerMedia {grid-area: text;}
     }
 
     .tip1Exercise {
@@ -44,6 +63,7 @@
       background-image: url(../images/resources-tips-1-exercise.jpg);
       background-size: 958.76px 639.54px;
       background-position: -15.6rem -6rem;
+      @include smallerMedia {background-size: 576.71px 384.7px; background-position: -9.6rem}
     }
 
     .tip2SocialConnection {
@@ -59,19 +79,17 @@
       background-size: 660px 436px;
       background-position: -8.3rem;
     }
-
-    @include laptopMedia {
-      width: 100%;
-    }
-
-    @include mediumMedia {
-      
-    }
   }
   
   @include laptopMedia {
     width: 95%;
     margin: 7.375rem auto 13.75rem;
+  }
+
+  @include smallerMedia {
+    width: 317px;
+    margin-top: 71px;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -82,6 +100,17 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 28px;
+
+  @include laptopMedia {
+    width: 95%;
+  }
+
+  @include smallerMedia {
+    margin: 60px 5% 0;
+    width: 90%;
+    height: 400px;
+    overflow: scroll;
+  }
 
   .trendingItemContainer {
     color: black;
@@ -103,6 +132,10 @@
     @include laptopMedia {
       width: 100%;
     }
+    
+    @include smallerMedia {
+      width: 200px;
+    }
 
     .trendingImg {
       @extend .imgContainer;
@@ -111,6 +144,10 @@
 
       @include laptopMedia{
         width: 100%;
+      }
+
+      @include smallerMedia {
+        height: 180px;
       }
     }
 
@@ -143,9 +180,5 @@
 
   .trendingItemContainer:hover h5 {
     text-decoration: underline;
-  }
-
-  @include laptopMedia {
-    width: 95%;
   }
 }

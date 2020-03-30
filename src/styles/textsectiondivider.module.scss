@@ -10,16 +10,20 @@
     margin-block-end: 0;
     text-align: center;
     color: $mockup-blue-textAccent;
+    
+    @include smallerMedia {font-size: 24px;}
   }
 
   p {
     font-size: 18px;
     line-height: 28px;
     margin-block-start: 1.5rem;
+
+    @include smallerMedia {margin-block-start: 0.75rem;}
   }
 
   @include mediumMedia {
-    width: 90%;
+    width: 60%;
   }
 }
 
@@ -28,4 +32,5 @@
   height: 5px;
   background-color: $mockup-blue-textAccent;
   margin: 5.75rem auto 6.75rem;
+  @include smallerMedia {margin-bottom: 71px;}
 }

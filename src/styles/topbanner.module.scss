@@ -14,12 +14,21 @@
   // position: absolute;
   // display: inline-block;
 
+  @include smallerMedia {
+    height: 550px;
+    margin-bottom: 3rem;
+  }
+
 }
 
 .imgContainer {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
+
+  // @include smallerMedia {
+  //   height: 
+  // }
 }
 
 .home {
@@ -82,7 +91,9 @@
   }
 
   @include smallerMedia {
+    top: 14.25rem;
     left: 8%;
+    width: 250px;
   }
 
   h2 {

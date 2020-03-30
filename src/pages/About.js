@@ -9,6 +9,13 @@ const About = () => {
     document.title = 'About Co-Caring'
   })
 
+  const pStyle = {
+    width: '63%',
+    fontSize: '18px',
+    lineHeight: '26px',
+    margin: '1.5rem auto'
+  }
+
   return (
     <>
       <TopBanner 
@@ -18,11 +25,18 @@ const About = () => {
         imgClass = 'aboutUs'
       />
 
-      <TextSection title='Our Story' width='65rem'>
+      {/* <TextSection title='Our Story' width='65rem'>
+        
         <p>The #Co-Caring Dashboard tracks and projects future growth in the county or community’s COVID-19 death rate, currently the most accurate data point for tracking COVID-19. The team building the #Co-Caring Dashboard are participants in the March 2020 Pandemic Response Hackathon organized by Devpost.</p>
         <p>Created in alignment with <a href='http://vytality.co'>Vytality Health’s</a> #Co-Caring movement. We are all caregivers and care receivers. Our current situation calls us to both. And in a crisis, efforts like neighbors helping neighbors, to organizations working with citizens and each other -- are often not scalable and disjointed. </p>
         <p>Vytality #co-caring brings good people, good leaders and good info together for greater impact. We&#39;re also building an app to ease communication.</p>
-      </TextSection>
+      </TextSection> */}
+
+      <TextSection title='Our Story'/>
+      {/* <div style={{height:'1rem'}} /> */}
+      <p style={pStyle}>The #Co-Caring Dashboard tracks COVID-19 spread in counties and states The team building the #Co-Caring Dashboard participated in the March 2020 Pandemic Response Hackathon organized by Datavant, and was created in alignment with Vytality Health’s #Co-Caring movement.</p>
+      <p style={pStyle}>We are all caregivers and care receivers. As private individuals and as organizations, we are called to both roles. And in a crisis, efforts -- like neighbors helping neighbors, to organizations working with citizens and other organizations -- are often not scalable. Vytality #Co-caring brings good people, leaders and info together for greater impact, and we're building a mobile app to ease communication. Check out <a href='http://vytality.co'>http://vytality.co</a> for more information.</p>
+      <p style={pStyle}>And please, stay healthy and be well.</p>
 
       <TextDivider/>
 

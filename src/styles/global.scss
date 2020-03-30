@@ -22,3 +22,15 @@ a {
 a:hover {
   color: $mockup-blue-textAccent;
 }
+
+.redditRedirectText {
+  color:pink;
+  padding-top: 5.25rem;
+  text-decoration: underline;
+  
+  @include smallerMedia {
+    width: 95%;
+    height: 20rem;
+    text-align: center;
+  }
+}

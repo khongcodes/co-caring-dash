@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 
 import TextSection from '../components/TextSection';
 
+import '../styles/global.scss';
 import loadingSpinner from '../images/src-spinner.gif'
 
 const Reddit = () => {
@@ -14,7 +15,7 @@ const Reddit = () => {
   })
 
   return (
-    <div style={{paddingTop: '5.25rem'}}>
+    <div className='redditRedirectText'>
 
       <TextSection title='You are being redirected to "https://www.reddit.com/r/vytality/"...'/>
 

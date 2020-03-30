@@ -22,6 +22,11 @@
     @include smallerMedia {margin-block-start: 0.75rem;}
   }
 
+  li {
+    font-size: 16px;
+    margin-block-end: 0.5rem;
+  }
+
   @include mediumMedia {
     width: 70%;
   }

@@ -21,7 +21,7 @@ const Home = () => {
       
       <TextSection title='Mission Statement'>
         <p>We are all caregivers and care receivers. As private individuals and as organizations, our current situation calls us to both. And in a crisis, efforts -- like neighbors helping neighbors, to organizations working with citizens and other organizations -- are often not scalable. In response to the ongoing challenge to track the spread of COVID-19 and to connect individuals, organizations and communities who want to help, we have created the #Co-Caring Dashboard.</p>
-        <p>To use the #Co-Caring Dashboard, please scroll down for information about COVID-19 in your state and county. 
+        <p>To use the #Co-Caring Dashboard, please scroll down for information about COVID-19 in your state and county.</p>
           <ul>
 
             <li>If you’re interested in joining or starting a co-caring project, such as supporting the elderly to shelter in place, click on the&nbsp;
@@ -41,7 +41,6 @@ const Home = () => {
             </li>
 
           </ul>
-        </p>
         
       </TextSection>
 

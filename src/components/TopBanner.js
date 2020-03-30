@@ -2,7 +2,7 @@ import React from 'react';
 
 import topBannerStyles from '../styles/topbanner.module.scss';
 
-const TopBanner = ({title, copy, button, imgClass}) => {
+const TopBanner = ({title, copy, button, imgClass, buttonText}) => {
   
   const handleClick = event => {
     const button = event.target.style;
@@ -27,7 +27,7 @@ const TopBanner = ({title, copy, button, imgClass}) => {
           <button className={topBannerStyles.button}
             onClick = {handleClick}
           >
-            LEARN MORE
+            {buttonText}
           </button>
         : <></>
         }

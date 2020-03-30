@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import TopBanner from '../components/TopBanner';
 import TextSection from '../components/TextSection';
@@ -16,6 +17,7 @@ const Home = () => {
         title = "Co-Caring"
         copy = "We are bringing people together for positive impact in response to the novel coronavirus."
         button = {true}
+        buttonText = 'Co-Caring Chat'
         imgClass = 'home'
       />
       
@@ -31,7 +33,11 @@ const Home = () => {
               &nbsp;to connect with others.
             </li>
 
-            <li>To support others in getting tested or finding public health department information, or helpful info on sheltering in place, try our Resources tab. </li>
+            <li>To support others in getting tested or finding public health department information, or helpful info on sheltering in place, try our&nbsp;
+              <Link to='/resources'>
+                Resources
+              </Link>
+            &nbsp;tab. </li>
 
             <li>To learn the basics on what to do and when, please&nbsp;
               <a href='http://bit.ly/coronavirustool' target="_blank" rel="noopener noreferrer">

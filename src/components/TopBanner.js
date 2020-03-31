@@ -2,7 +2,7 @@ import React from 'react';
 
 import topBannerStyles from '../styles/topbanner.module.scss';
 
-const TopBanner = ({title, copy, button, imgClass, buttonText}) => {
+const TopBanner = ({title, copy, button, imgClass, buttonText, buttonUrl}) => {
   
   const handleClick = event => {
     const button = event.target.style;
@@ -10,7 +10,7 @@ const TopBanner = ({title, copy, button, imgClass, buttonText}) => {
     button.top='0.1rem'
     setTimeout(()=>{
       button.top='0';
-      window.open('https://www.reddit.com/r/vytality/', '_blank');
+      window.open(buttonUrl, '_blank');
     },100)
   }
   

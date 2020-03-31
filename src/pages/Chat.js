@@ -5,7 +5,7 @@ import TextSection from '../components/TextSection';
 import '../styles/global.scss';
 import loadingSpinner from '../images/src-spinner.gif'
 
-const Reddit = () => {
+const Chat = () => {
   useEffect(() => {
     document.title = '#Co-Caring Reddit'
     setTimeout(() => {
@@ -26,4 +26,4 @@ const Reddit = () => {
   )
 }
 
-export default Reddit
+export default Chat

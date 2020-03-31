@@ -26,7 +26,7 @@ const Header = ({menuActive, toggleMenu}) => (
       >Dashboard</NavLink>
           
       <NavLink exact className={layoutStyles.navLink} activeClassName={layoutStyles.navLinkActive}
-        to = '/reddit'
+        to = '/chat'
       >Co-Caring Chat</NavLink>
 
       <NavLink exact className={layoutStyles.navLink} activeClassName={layoutStyles.navLinkActive}

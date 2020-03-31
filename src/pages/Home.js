@@ -18,6 +18,7 @@ const Home = () => {
         copy = "We are bringing people together for positive impact in response to the novel coronavirus."
         button = {true}
         buttonText = 'Co-Caring Chat'
+        buttonUrl = 'https://facebook.com/groups/cocaring'
         imgClass = 'home'
       />
       
@@ -27,7 +28,7 @@ const Home = () => {
           <ul>
 
             <li>If you’re interested in joining or starting a co-caring project, such as supporting the elderly to shelter in place, click on the&nbsp;
-              <a href='https://www.reddit.com/r/vytality/' target='_blank' rel="noopener noreferrer">
+              <a href='https://facebook.com/groups/cocaring' target='_blank' rel="noopener noreferrer">
                 Co-Caring Chat
               </a>
               &nbsp;to connect with others.

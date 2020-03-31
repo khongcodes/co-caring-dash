@@ -1,28 +1,38 @@
 import React, { useEffect } from 'react';
 
+import TopBanner from '../components/TopBanner';
 import TextSection from '../components/TextSection';
 
 import '../styles/global.scss';
-import loadingSpinner from '../images/src-spinner.gif'
 
 const Chat = () => {
   useEffect(() => {
-    document.title = '#Co-Caring Reddit'
-    setTimeout(() => {
-      window.open('https://www.reddit.com/r/vytality/', '_blank')
-    }, 1200)
+    document.title = '#Co-Caring Chat'
   })
 
   return (
-    <div className='redditRedirectText'>
+    <>
+      <TopBanner 
+        title = "Chat"
+        copy = "Connect with your #Co-Caring community."
+        button = {false}
+        imgClass = 'aboutUs'
+      />
 
-      <TextSection title='You are being redirected to "https://www.reddit.com/r/vytality/"...'/>
+      <TextSection title='Connect'>
+        <p style={{textAlign: 'center', marginTop: '3rem'}}>
+          <a href='https://facebook.com/groups/cocaring' target='_blank' rel="noopener noreferrer">
+            Facebook
+          </a>
 
-      <div style={{margin: '0 auto', width: 'fit-content', marginTop: '1rem'}} >
-        <img src={loadingSpinner} alt='loading-spinner'/>
-      </div>
+          &nbsp;|&nbsp;
 
-    </div>
+          <a href='https://www.reddit.com/r/vytality/' target='_blank' rel="noopener noreferrer">
+            Reddit
+          </a>
+        </p>
+      </TextSection>
+    </>
   )
 }
 

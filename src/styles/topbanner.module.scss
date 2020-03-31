@@ -75,6 +75,21 @@
   }
 }
 
+.chat {
+  @extend .imgContainer;
+  background-image: url('../images/chat-banner.jpg');
+  background-size: 97rem;
+  background-position-x: 50%;
+  background-position-y: -28rem;
+  filter: brightness(0.5);
+  
+  @include largeMedia {
+    background-size: 100%;
+    background-position-x: -50%;
+    background-position-y: 60%;
+  }
+}
+
 .textContainer {
   overflow: auto;
   width: 34.25rem;

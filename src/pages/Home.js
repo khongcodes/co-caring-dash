@@ -28,9 +28,9 @@ const Home = () => {
           <ul>
 
             <li>If you’re interested in joining or starting a co-caring project, such as supporting the elderly to shelter in place, click on the&nbsp;
-              <a href='https://facebook.com/groups/cocaring' target='_blank' rel="noopener noreferrer">
+              <Link to='/chat'>
                 Co-Caring Chat
-              </a>
+              </Link>
               &nbsp;to connect with others.
             </li>
 
@@ -56,9 +56,9 @@ const Home = () => {
       <div>
         {/* <Link to='/reddit'> */}
           <p style={{textAlign: 'center'}}>
-            <a href='https://www.reddit.com/r/vytality/' target="_blank" rel="noopener noreferrer">
+            <Link to='/chat'>
               Connect to #co-caring people and projects to slow COVID-19 spread here.
-            </a>
+            </Link>
           </p>
         {/* </Link> */}
       </div>

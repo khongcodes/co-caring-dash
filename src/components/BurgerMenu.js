@@ -38,7 +38,7 @@ export const BurgerMenu = ({menuActive, toggleMenu}) => (
           
       <p>
         <NavLink exact className={layoutStyles.navLink} activeClassName={layoutStyles.navLinkActive} onClick={toggleMenu}
-          to = '/reddit'
+          to = '/chat'
         >Co-Caring Chat</NavLink>
       </p>
 

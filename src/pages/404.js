@@ -8,7 +8,7 @@ const Error404 = () => {
   })
 
   return (
-    <div style={{paddingTop: '5.25rem'}}>
+    <div style={{paddingTop: '5.25rem', textAlign: 'center'}}>
 
       <TextSection title='404 Error' >
         <p>The page you were looking for could not be found.</p>

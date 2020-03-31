@@ -60,7 +60,6 @@ const Footer = () => (
 const Layout = ({ children }) => {
   const [menuActive, setMenuActive] = useState(false)
   const toggleMenu = () => {
-    console.log(menuActive)
     setMenuActive(!menuActive)
   }
 

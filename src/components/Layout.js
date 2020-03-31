@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { NavLink, withRouter } from 'react-router-dom';
 
 import { MobileBurger, BurgerMenu } from '../components/BurgerMenu';
 
@@ -77,5 +77,19 @@ const Layout = ({ children }) => {
     </>
   )
 }
+
+const ScrollToTop = ({history}) => {
+  useEffect( () => {
+    const unlisten = history.listen(() => {
+      window.scrollTo(0,0);
+    });
+    return () => {
+      unlisten();
+    }
+  }, []);
+  return (null);
+}
+
+export const ScrollUp = withRouter(ScrollToTop)
 
 export default Layout

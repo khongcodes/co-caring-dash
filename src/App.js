@@ -7,13 +7,14 @@ import Chat from './pages/Chat';
 import Resources from './pages/Resources';
 import Error404 from './pages/404';
 
-import Layout from './components/Layout';
+import Layout, { ScrollUp } from './components/Layout';
 
 
 function App() {
   return (
     <Router>
       <Layout>
+        <ScrollUp/>
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route exact path='/chat' component={Chat}/>
